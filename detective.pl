@@ -30,7 +30,7 @@ estuvo(james, estudio).
 
 escena_crimen(X):-persona(X),estuvo(X,biblioteca).
 
-motivo_oportunidad(X,Y):-estuvo(X,biblioteca),motivo(X,Y).
+motivo_oportunidad(X,Y):-estuvo(X,biblioteca),motivo(X,_).
 
 acceso_arma(X):-estuvo(X,biblioteca),motivo(X,_),acceso(X,cuerda).
 
@@ -56,9 +56,9 @@ clara
 
 4. Cruzar información
 Crea una regla que combine motivo y oportunidad.
-motivo_oportunidad(X,Y):-estuvo(X,biblioteca),motivo(X,Y).
-motivo_oportunidad(X,Y).
-clara	deuda
+motivo_oportunidad(X):-estuvo(X,biblioteca),motivo(X,_).
+motivo_oportunidad(X).
+clara
 
 5. Analizar el arma
 El informe forense revela que la víctima fue estrangulada.
