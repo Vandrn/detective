@@ -1,0 +1,19 @@
+?- come(cerdo, X).
+X = pasto.
+
+?- come(cerdo, granja).
+false.
+
+?- come(pollo, cerdo).
+false.
+
+?- come(oveja, cerdo).
+false.
+
+?- comida(X).
+X = pollo .
+
+?- comida(cerdo).
+false.
+
+?- granja(X)

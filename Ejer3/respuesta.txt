@@ -1,0 +1,10 @@
+1) . ¿Qué come el conejo? 
+come(conejo,Que)  : Que = zanahoria
+
+2)  ¿Qué animales son comida del gato?
+    come(conejo) : true
+    come(gato):false
+    come(perro):true
+
+3)¿Es el perro un animal
+domestico(perro)   : true

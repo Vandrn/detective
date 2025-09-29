@@ -1,0 +1,14 @@
+//1. ¿Qué come el pingüino?
+
+	come(pinguino, X)
+		X = pescado
+//2. ¿Qué animales son comida del águila?
+	comida(aguila)
+		false
+	comida(loro)
+		true
+	comida(pingüino)
+		true
+//3. ¿Es el loro un ave?
+	ave(loro)
+		true
